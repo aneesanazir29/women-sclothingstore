@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Signup Page </title>
+    <style>
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;  
+    font-family: 'Roboto', sans-serif;  
+}
+
+#bg-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;  
+    z-index: -1;        
+}
+
+.signup-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;      /* Full viewport height */
+}
+
+.signup-box {
+    background: transparent;  /* Semi-transparent background */
+    padding: 40px;       /* Larger padding for the signup form */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    width: 350px;       /* Slightly wider for more form fields */
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    text-align: left;
+    font-weight: 700;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #4CAF50;  /* Green button color */
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #388e3c; 
+}
+
+.login-link {
+    margin-top: 15px;
+}
+
+.login-link a {
+    text-decoration: none;
+    color: #4CAF50;  
+}
+
+.login-link a:hover {
+    text-decoration: underline;  
+}
+
+    </style>
+</head>
+<body>
+    
+    <video id="bg-video" autoplay muted loop>
+        <source src=" D:\web project\media\background.mp4" type="video/mp4">  
+        Your browser does not support the video tag.
+    </video>
+
+   
+    <div class="signup-container">
+        <div class="signup-box">
+            <h1>Sign Up</h1>
+            <form>
+                <div class="input-group">
+                    <label for="fullname">Full Name:</label>
+                    <input type="text" id="fullname" name="fullname" required>
+                </div>
+                <div class="input-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="input-group">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <div class="input-group">
+                    <label for="confirm-password">Confirm Password:</label>
+                    <input type="password" id="confirm-password" name="confirm-password" required>
+                </div>
+                <div class="input-group">
+                    <button type="submit">Sign Up</button>
+                </div>
+            </form>
+            <div class="login-link">
+                Already have an account? <a href="login.html">Log In</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
